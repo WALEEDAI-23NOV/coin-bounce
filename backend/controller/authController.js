@@ -118,7 +118,7 @@ const authController = {
       }
 
       // match password
-      // req.body.password -> hashed -> match
+      // req.body.password -> hashe -> match
       const match = await bcrypt.compare(password, user.password);
 
       if (!match) {
